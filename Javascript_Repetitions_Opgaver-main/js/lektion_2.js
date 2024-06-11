@@ -60,3 +60,17 @@ function RandomNumber(startValue, endValue) {
 
 //Opgave 5
 
+ //Get the random color
+
+ document.getElementById("color-button").addEventListener("click", function() {
+    // Generate random RGB values
+    var red = Math.floor(Math.random() * 256);
+    var green = Math.floor(Math.random() * 256);
+    var blue = Math.floor(Math.random() * 256);
+
+    // Create RGB color string
+    var rgbColor = 'rgb(' + red + ',' + green + ',' + blue + ')';
+
+    // Assign color to the color box
+    document.getElementById("color-box").style.backgroundColor = rgbColor;
+});
