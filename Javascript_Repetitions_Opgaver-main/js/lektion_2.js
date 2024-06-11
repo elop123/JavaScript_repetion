@@ -7,19 +7,14 @@ let L2_5 = document.querySelector("#L2_5");
 
 //Opgave 1
 
-function check(value) {
-    let result = document.getElementById('result');
-    if (typeof value === 'string') {
-        result.innerText = value + ' er af typen: string';
-    } else if (typeof value === 'number') {
-        result.innerText = value + ' er af typen: number';
-    } else {
-        result.innerText = 'Ukendt type';
-    }
+function checkTypeOf() {
+    let typeInput = document.getElementById('type').value;
+    let result = document.getElementById('res');
+    let type = typeof typeInput;
+    result.innerText = `${typeInput} are of the type:${type}`;
 }
- // Example usage
- var inputValue = 123;
- check(inputValue); // Call the function with a value
+
+
 
  //Opgave 2
 
