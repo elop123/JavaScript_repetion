@@ -49,3 +49,14 @@ function checkStringLength(inputString) {
         result.innerText = '"' + text + '" does not have a length greater than or equal to 2 letters.';
     }
 }
+
+//Opgave 4
+
+function RandomNumber(startValue, endValue) {
+    var randomNumber = Math.floor(Math.random() * (endValue - startValue + 1)) + startValue;
+    var result = document.getElementById('results');
+    result.innerText = "Our random number between " + startValue + " and " + endValue + " is: " + randomNumber;
+}
+
+//Opgave 5
+
