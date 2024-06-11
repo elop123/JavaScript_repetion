@@ -60,7 +60,7 @@ function displayWordInfo() {
 
 //Opgave  6
 
-function removeVowels() {
+function removeVowels()  {
   // Get the word from the input field
   const word = document.getElementById('word').value;
   
