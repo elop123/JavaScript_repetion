@@ -23,7 +23,7 @@ function checkTypeOf() {
 function validateEmail(email) {
     var email = document.getElementById('email').value;
     var result = document.getElementById('r_email');
-    var emailRegex = /^[^\s@]+@[^\s@]+\.(com|dk|org|net|edu|gov)$/i;
+    var emailRegex = /^[^\s@]+@[^\s@]+\.(com|dk|net|org|edu|gov|mil|io|co|biz|info|me|us|fr|de)$/i;
     if (emailRegex.test(email)) {
         result.innerText = email + ' is a valid email address.';
     } else {
