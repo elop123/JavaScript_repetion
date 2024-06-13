@@ -26,9 +26,9 @@ function check(value) {
 //Validation of email:
 
 function validateEmail(email) {
-    var email = document.getElementById('email').value;
-    var result = document.getElementById('r_email');
-    var emailRegex = /^[^\s@]+@[^\s@]+\.(com|dk|org|net|edu|gov)$/i;
+ let email = document.getElementById('email').value;
+    let result = document.getElementById('r_email');
+    let emailRegex = /^[^\s@]+@[^\s@]+\.(com|dk|org|net|edu|gov)$/i;
     if (emailRegex.test(email)) {
         result.innerText = email + ' is a valid email address.';
     } else {
