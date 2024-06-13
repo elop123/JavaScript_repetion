@@ -7,15 +7,21 @@ let L2_5 = document.querySelector("#L2_5");
 
 //Opgave 1
 
-function checkTypeOf() {
-    let typeInput = document.getElementById('type').value;
-    let result = document.getElementById('res');
-    let type = typeof typeInput;
-    
+        function checkTypeOf() {
+            let typeInput = document.getElementById('type').value;
+            let result = document.getElementById('res');
+            let type;
 
-    
-    result.innerText = `${typeInput} is :${type}`;
-}
+            if (typeInput === " ") {
+                type = "empty string";
+            } else if (!isNaN(typeInput) && typeInput.trim() !== "") {
+                type = "number";
+            } else {
+                type = "string";
+            }
+
+            result.innerText = `${typeInput} is: ${type}`;
+        }
 
 
 
