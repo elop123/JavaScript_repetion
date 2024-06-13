@@ -20,9 +20,7 @@
       <div id="L1_2">
         <h4>Opgave 2</h4>
         <button onclick="myButton()">Try it</button>
-        <div id="hidden_text">
-          This is a hidden text.
-        </div>
+        <div id="hidden_text"> This is a hidden text.</div>
       </div>
       <div id="L1_3">
         <h4>Opgave 3</h4>
@@ -54,7 +52,9 @@
       <h1>Lektion 2</h1>
       <div id="L2_1">
         <h4>Opgave 1</h4>
-        <div id="result"></div>
+        <input type="text" id="type" placeholder="check type">
+        <button onclick="checkTypeOf()">Submit</button>
+        <div id="res"></div>
       </div>
       <div id="L2_2">
         <h4>Opgave 2</h4>
@@ -70,9 +70,13 @@
       </div>
       <div id="L2_4">
         <h4>Opgave 4</h4>
+        <button onclick="RandomNumber(4, 32)">Random Number</button>
+        <div id="results"></div>
       </div>
       <div id="L2_5">
         <h4>Opgave 5</h4>
+        <button id="color-button">Random Color</button>
+        <div id="color-box"></div>
       </div>
     </section>
     <section class="mainContainer">
