@@ -49,3 +49,4 @@ function checkStringLength() {
         result.innerText = '"' + text + '" does not have a length greater than or equal to 2 letters.';
     }
 }
+
