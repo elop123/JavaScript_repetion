@@ -79,3 +79,21 @@ function RandomNumber(startValue, endValue) {
     document.getElementById("color-box").style.backgroundColor = rgbColor;
 });
 
+
+
+// random sentence:
+
+let subst = ["jeg", "han", "hun", "dem", "de"];
+let verb = ["kaster", "tegner", "giver", "henter"];
+let adj = ["vand", "maling", "fyrværkeri", "blomster"];
+
+
+let subt_1 = Math.floor(Math.random());
+let verb_1 = Math.floor(Math.random());
+let adj_1 = Math.floor(Math.random());
+
+let result= `${subst[0]} ${verb[0]} ${adj[0]}`;
+
+console.log(subst);
+console.log(result);
+
