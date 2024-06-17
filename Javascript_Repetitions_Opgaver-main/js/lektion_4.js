@@ -25,11 +25,27 @@ lastNameElement.addEventListener('change', ()=>{
 })
 
 // Opgave 1
-function fullName(firstName, lastName) {
+function fullName(seconds) {
+    //console.log(fullName);
     let myName = firstName + " " + lastName;
     let newH3 = document.createElement("h3");
     newH3.innerText = myName;
     L4_1.appendChild(newH3);
   }
   
- 
+ setTimeout(()=>{
+newH3.innerText = " ";
+ }, 3000);
+
+
+ function countUp(){
+
+    setInterval(() => {
+        if (time <10){}
+        time=+1;
+        let newP = document.createElement('p');
+        newP.innerText = "time is:" + time;
+    }, 1000);
+   
+ }
+
