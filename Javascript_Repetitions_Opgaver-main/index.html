@@ -8,7 +8,7 @@
     <script src="./js/lektion_2.js" defer></script>
     <script src="./js/lektion_3.js" defer></script>
     <script src="./js/lektion_4.js" defer></script>
-    <script src="./js/lektion_5.js" defer></script>
+    <script src="./js/lektion_5.js" defer></script> 
     <link rel="stylesheet" type="text/css" href="./scss/main.css" />
   </head>
   <body>
@@ -109,17 +109,33 @@
           Last Name
           <input type="text" id="last">
         </label>
-        <button onlick="fullName(3)">Show my number</button>
+        <button onclick="fullName()">Show my name</button>
       </div>
       <div id="L4_2">
         <h4>Opgave 2</h4>
-        <button onclick="countUp()">Count</button>
+        <button id="delayButton">Wait 4 seconds</button>
       </div>
       <div id="L4_3">
         <h4>Opgave 3</h4>
+        <button id="start">Start</button>
+        <button id="stop"> Stop</button>
+        <p id="timer"></p>
       </div>
-      <div id="L4_4">
+      <div id="L4_4" onscroll="scroll()">
         <h4>Opgave 4</h4>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+           Exercitationem ab unde ea enim in atque, architecto perferendis 
+           eius blanditiis similique natus magni, vero dolorum officia ipsam, 
+           nulla praesentium! Odit, ullam?</p>
+        <p >Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+          Exercitationem ab unde ea enim in atque, architecto perferendis 
+          eius blanditiis similique natus magni, vero dolorum officia ipsam, 
+          nulla praesentium! Odit, ullam?</p>
+        <p >Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+          xercitationem ab unde ea enim in atque, architecto perferendis 
+          eius blanditiis similique natus magni, vero dolorum officia ipsam, 
+          nulla praesentium! Odit, ullam?</p>
+        <p id="demo">Scrolled : 0 times.</p>
       </div>
       <div id="L4_5">
         <h4>Opgave 5</h4>

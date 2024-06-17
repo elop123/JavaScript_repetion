@@ -133,7 +133,7 @@ L3_3.appendChild(room);
 
 let numbers =[0,3,8,99,55.5, 0.5, 100, 1000, 9999, 500];
 
-for(let i=0; i<numbers.length; ){
+for(let i=0; i<numbers.length; i++){
     let sum = document.createElement('p');
     sum.innerText= "The sum is:"+ " "+ numbers;
     L3_4.appendChild(sum);
