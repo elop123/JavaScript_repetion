@@ -94,15 +94,24 @@ function stopStopwatch() {
 
 
 //#Opgave 4
+//Scroll function on the page in %
 
-let move = 0;
-
-function scroll(){
-    move++;
-    let newMove = document.getElementById('L4_4');
-    newMove.innerText = `Scrolled : ${move} times.`;
-    newMove.appendChild(move);
-    console.log(move);
-
+function scroll(event){
+    //console.log(event);
+    
+    let scrollHeight = 4290;
+    let scrollPage=window.scrollY ;
+    let result = Math.round(scrollPage/scrollHeight*100);
+    
+    result++;
+    
+    document.getElementById('demo').innerText = `Scrolled: ${result}%`;
+    
+    //console.log('hello');
+    console.log(result);
 }
+
+//Opgave 5
+//Notification system
+
 
