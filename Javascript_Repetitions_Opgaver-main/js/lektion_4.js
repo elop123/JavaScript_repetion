@@ -108,10 +108,16 @@ function scroll(event){
     document.getElementById('demo').innerText = `Scrolled: ${result}%`;
     
     //console.log('hello');
-    console.log(result);
+    //console.log(result);
 }
 
 //Opgave 5
 //Notification system
 
+ let mySystem ="";
+
+function openFunction(){
+mySystem= window.open("","Hello & Welcome", "width=250,height=50", "style.color:green");
+console.log("Hello & Welcome");
+}
 
